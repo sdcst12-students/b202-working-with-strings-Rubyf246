@@ -8,17 +8,20 @@ The assertion tests are included so you can test your output
 '''
 
 def replaceDog(input):
+    
+
+    input = x.replace("dog", "kitty")
+
     '''
     parameters:
     str input - string to search and replace occurrences of dog with kitty
-
+    
     return
     str - the modified string
     '''
     modifiedString = input
-
+    print("kimmy sucks ")
     return modifiedString
-
 
 if __name__ == "__main__":
     '''
@@ -28,6 +31,7 @@ if __name__ == "__main__":
     '''
     x = 'my dog has fleas'
     assert replaceDog(x) == 'my kitty has fleas'
+
 
     x = 'i have a dog and a goldfish as my pets'
     assert replaceDog(x) == 'i have a kitty and a goldfish as my pets'

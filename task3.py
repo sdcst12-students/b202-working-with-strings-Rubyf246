@@ -6,7 +6,7 @@ Split a string into 2 halves and insert a line break in the middle.  If doing so
 len(str) function
 this function returns the length of the string
 
-(2 points)
+( points)
 '''
 
 def split(input):

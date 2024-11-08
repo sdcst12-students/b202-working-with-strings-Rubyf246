@@ -1,11 +1,14 @@
 #!python3
 '''
 ##### Task 2
-Take a string and make sure that it is a proper sentence, with only the first letter capitalized and the rest of the sentence in lower case. We will assume that the sentence never includes names that require capitalization.
+Take a string and make sure that it is a proper sentence, with only the first letter
+capitalized and the rest of the sentence in lower case. We will assume that the sentence
+never includes names that require capitalization.
 (2 points)
 '''
 
 def properCaps(input):
+    x=sentence.capitalize()
     '''
     parameters:
     str input - string to fix capitalization for
@@ -13,7 +16,8 @@ def properCaps(input):
     return
     str - proper capitalized string
     '''
-    return
+
+    return x 
 
 
 if __name__ == "__main__":
