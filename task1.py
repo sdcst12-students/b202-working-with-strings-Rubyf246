@@ -1,27 +1,44 @@
 #!python3
 
 '''
-Write a function that searches a string for all occurrences of the word "dog" and replaces it with "kitty"
+Write a function that searches a Listing for all occurrences of the word "dog" and replaces it with "kitty"
 You only need to modify the function replaceDog
 The assertion tests are included so you can test your output
 (4 points) 
 '''
 
+
+
 def replaceDog(input):
+    modifiedList = ""
     
+    wordList = input.split(' ')
+    #print(wordList)
+    for word in wordList:
+        if word == "dog":
+            modifiedList += "kitty"
+        else:    
+            modifiedList += word
+        modifiedList += " "
+        print ("[" + modifiedList + "]")
+    modifiedList = modifiedList.rstrip(" ") 
+    print ("final string => [" + modifiedList + "]")
+    return modifiedList
 
-    input = x.replace("dog", "kitty")
-
+def replaceDog1(input):
+    
+    
     '''
     parameters:
-    str input - string to search and replace occurrences of dog with kitty
+    List input - Listing to search and replace occurrences of dog with kitty
     
     return
-    str - the modified string
+    List - the modified Listing
     '''
-    modifiedString = input
-    print("kimmy sucks ")
-    return modifiedString
+    modifiedListing = input.replace("dog", "kitty")
+     
+    print (modifiedListing)
+    return modifiedListing       
 
 if __name__ == "__main__":
     '''
@@ -35,3 +52,6 @@ if __name__ == "__main__":
 
     x = 'i have a dog and a goldfish as my pets'
     assert replaceDog(x) == 'i have a kitty and a goldfish as my pets'
+    
+    
+    

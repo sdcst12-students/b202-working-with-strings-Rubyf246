@@ -8,7 +8,7 @@ never includes names that require capitalization.
 '''
 
 def properCaps(input):
-    x=sentence.capitalize()
+    x=input.capitalize()
     '''
     parameters:
     str input - string to fix capitalization for
@@ -16,12 +16,15 @@ def properCaps(input):
     return
     str - proper capitalized string
     '''
-
+    print(x)
     return x 
 
 
+ 
+
+
 if __name__ == "__main__":
-    sentence = "Carry On My Wayward Son!"
+    sentence = "carry On My Wayward Son!"
     assert properCaps(sentence) == "Carry on my wayward son!"
 
     sentence = "I'm JuSt A LiTtle Black RainCLOUD!"
