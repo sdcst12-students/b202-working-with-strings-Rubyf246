@@ -6,9 +6,12 @@ Strings are iterable.  Use for loops to iterate through both strings to create a
 
 ranks = "A23456789TJQK"
 suits = "CDHS"
-
+deck = []
 def createDeck():
-  return 
+  for char_of_rank in ranks:
+    for char_of_suit in suits:
+      deck.append(char_of_rank + char_of_suit)
+  return deck
 
 def main():
   deck = createDeck()
